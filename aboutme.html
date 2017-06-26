@@ -5,38 +5,52 @@
 <title>Page Title</title>
 </head>
 
+<head>
 <style>
-.btn-group button {
-    border: 1px solid white; /* white border */
-    color: black; /* black text */
-    padding: 10px 24px; /* Some padding */
-    cursor: pointer; /* Pointer/hand icon */
-    float: left; /* Float the buttons side by side */
+body {margin:0;}
+
+.topnav {
+  overflow: auto;
+  
 }
 
-/* Clear floats (clearfix hack) */
-.btn-group:after {
-    content: "";
-    clear: both;
-    display: table;
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
 }
 
-.btn-group button:not(:last-child) {
-    border-right: none; /* Prevent double borders */
+.topnav a:hover {
+  background-color: #dcd;
+  color: black;
 }
 
-/* Add a background color on hover */
-.btn-group button:hover {
-    background-color: #3e8e41;
+.topnav a.active {
+    background-color: #4CAF50;
+    color: white;
 }
 </style>
+</head>
 <body>
 
-<div class="btn-group">
-  <button>About Me</button>
-  <button>Projects</button>
-  <button>Contact</button>
+<body background="http://sparklelightstudios.com/wp-content/uploads/2016/01/cotton-candy-background-copy.png">
+
+<div class="topnav">
+  <a class="active" href="#home">Home</a>
+  <a href="#aboutme">About Me</a>
+  <a href="#projects">Projects</a>
+  <a href="#contact">Contact</a>
 </div>
+
+<div style="padding-left:16px">
+  <h2>Top Navigation Example</h2>
+  <p>Some content..</p>
+</div>
+
 
 <body>
 
