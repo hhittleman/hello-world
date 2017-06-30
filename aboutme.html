@@ -125,22 +125,6 @@ function normalImg(x) {
 <br>
 </div>
 
-<script>
-function openIdea(evt, ideaName) {
-    var i, tabcontent, tablinks;
-    tabcontent = document.getElementsByClassName("tabcontent");
-    for (i = 0; i < tabcontent.length; i++) {
-        tabcontent[i].style.display = "none";
-    }
-    tablinks = document.getElementsByClassName("tablinks");
-    for (i = 0; i < tablinks.length; i++) {
-        tablinks[i].className = tablinks[i].className.replace(" active", "");
-    }
-    document.getElementById(ideaName).style.display = "block";
-    evt.currentTarget.className += " active";
-}
-</script>
-
 <div class="w3-content w3-display-container">
   <img class="mySlides" src="jimin.jpg" style="width: 100%">
   <img class="mySlides" src="recolored.jpg" style="width: 100%">
