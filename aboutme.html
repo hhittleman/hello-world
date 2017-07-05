@@ -111,48 +111,48 @@ window.alert("Welcome! :) ");
   <p>I created an Obamicon of photo of Jimin from BTS using Python.</p>
 
    
-<img onmouseenter="bigImg(this)" onmouseleave="normalImg(this)" border="1" src="recolored.jpg" alt="recolored" width="50" height="80">
+   <img onmouseenter="bigImg(this)" onmouseleave="normalImg(this)" border="1" src="recolored.jpg" alt="recolored" width="50" height="80">
 
-<script>
-function bigImg(x) {
-    x.style.height = "415px";
-    x.style.width = "304px";
-}
-function normalImg(x) {
-    x.style.height = "405px";
-    x.style.width = "294px";
-}
+   <script>
+   function bigImg(x) {
+      x.style.height = "415px";
+      x.style.width = "304px";
+   }
+   function normalImg(x) {
+      x.style.height = "405px";
+      x.style.width = "294px";
+   }
     
-</script> 
-<br>
-</div>
-<div>
-<div class="w3-content w3-display-container">
-  <img class="mySlides" src="jimin.jpg" style="width: 100%">
-  <img class="mySlides" src="recolored.jpg" style="width: 100%">
+   </script> 
+   <br>
+   </div>
+   <div>
+   <div class="w3-content w3-display-container">
+    <img class="mySlides" src="jimin.jpg" style="width: 100%">
+    <img class="mySlides" src="recolored.jpg" style="width: 100%">
 
-  <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
-  <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
-</div>
+      <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+      <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
+   </div>
 
-<script>
-var slideIndex = 1;
-showDivs(slideIndex);
+   <script>
+   var slideIndex = 1;
+   showDivs(slideIndex);
 
-function plusDivs(n) {
-  showDivs(slideIndex += n);
-}
+   function plusDivs(n) {
+   showDivs(slideIndex += n);
+   }
 
-function showDivs(n) {
-  var i;
-  var x = document.getElementsByClassName("mySlides");
-  if (n > x.length) {slideIndex = 1}    
-  if (n < 1) {slideIndex = x.length}
-  for (i = 0; i < x.length; i++) {
-     x[i].style.display = "none";  
-  }
-  x[slideIndex-1].style.display = "block";  
-}
+   function showDivs(n) {
+      var i;
+      var x = document.getElementsByClassName("mySlides");
+      if (n > x.length) {slideIndex = 1}    
+      if (n < 1) {slideIndex = x.length}
+      for (i = 0; i < x.length; i++) {
+         x[i].style.display = "none";  
+      }
+      x[slideIndex-1].style.display = "block";  
+    }
 </script>
 </div>
    
