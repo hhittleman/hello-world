@@ -46,6 +46,21 @@ div.tab button.active {
     border-top: none;
 }
 </style>
+<script>
+function openIdea(evt, ideaName) {
+    var i, tabcontent, tablinks;
+    tabcontent = document.getElementsByClassName("tabcontent");
+    for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+    }
+    tablinks = document.getElementsByClassName("tablinks");
+    for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" active", "");
+    }
+    document.getElementById(ideaName).style.display = "block";
+    evt.currentTarget.className += " active";
+}
+</script>
 </head>
 <body>
 
@@ -89,7 +104,7 @@ window.alert("Welcome! :) ");
   <h3>Projects</h3>
   <p>these are projects I have done as a participant at Girls Who Code</p>
     <p>I created a paddle game on Scratch.</p>
-   #div?
+   <div>
    <img onmouseenter="bigImg(this)" onmouseleave="normalImg(this)" border="1" src="paddle.png" alt="Paddle" width="70" height="70">
 
    <script>
@@ -105,7 +120,7 @@ window.alert("Welcome! :) ");
    }
 
    </script>
-   #/div?
+   </div>
 
     <br>
   <p>I created an Obamicon of photo of Jimin from BTS using Python.</p>
@@ -125,8 +140,8 @@ window.alert("Welcome! :) ");
     
    </script> 
    <br>
-   #/div?
-   #div?
+   </div>
+   <div>
    <div class="w3-content w3-display-container">
     <img class="mySlides" src="jimin.jpg" style="width: 100%">
     <img class="mySlides" src="recolored.jpg" style="width: 100%">
