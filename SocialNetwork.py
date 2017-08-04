@@ -53,7 +53,7 @@ class Network:
                 userID = user.getUserID()
             return userID
     #add connections
-    def addConnections(self, user1, user2):
+    def addConnections(self, user1, user2)
         #creating 2 user variables that get the user id
         user1_id = self.getUserID(user1)
         user2_id = self.getUserID(user2)
@@ -61,7 +61,7 @@ class Network:
         user1 = self.users[user1_id]
         user2 = self.users[user2_id]
         #username that you are trying to add is not existant
-        if user1_id == -1 or user2_id == -1:
+        if user1_id == -1 or user2_id == -1
             print("Sorry, one or more username is not correct. Try again.")
             return False
         #user is trying to add itself as a connection/friend
